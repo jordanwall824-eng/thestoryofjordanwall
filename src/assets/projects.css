@@ -3,45 +3,50 @@
 /* Load Satoshi (same import style as About Me) */
 @import url("https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700&display=swap");
 
-
-/* Page layout */
+/* ===== PAGE LAYOUT ===== */
 .projectsSection {
-  margin-top: 40px;
+  width: 100%;
+  max-width: 1100px;
+  margin: 32px auto 60px;
+  padding: 0 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 24px;
 }
 
-/* logo container */
-.projectLogo {
+/* ===== LOGO CONTAINERS ===== */
+.projectLogo,
+.BOALogo,
+.medtronicLogo,
+.medtronicLogo2 {
+  width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 6px;
-  margin-left: 50px;
+  margin: 4px 0 8px 0;
 }
 
-/* logo image */
-.projectLogo img {
+.projectLogo img,
+.BOALogo img,
+.medtronicLogo img,
+.medtronicLogo2 img {
   width: 260px;
-  max-width: 100%; 
-  margin-left: 200px
+  max-width: 100%;
+  height: auto;
 }
 
-/* case study card */
+/* ===== CASE STUDY CARD ===== */
 .projectCard {
   background: #ffffff;
   border-radius: 14px;
   padding: 24px 28px;
 
   width: 100%;
-  max-width: 720px;
+  max-width: 760px;
+  margin: 0 auto 28px;
 
-  /* centered so it’s not hugging the right edge */
-  margin-left: 250px;
-
-  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.08);
 
   text-align: left;
 }
@@ -53,7 +58,6 @@
   margin-bottom: 6px;
 }
 
-
 /* ===== ROLE TITLES — Satoshi ===== */
 .projectCard h2 {
   margin: 0 0 10px 0;
@@ -63,120 +67,66 @@
   color: #111;
 }
 
-
 /* description */
 .projectBlurb {
-  margin: 6px 0 14px;
+  margin: 6px 0 10px;
   line-height: 1.55;
   color: #333;
 }
 
 /* bullet list */
 .projectList {
-  margin: 0 0 10px 16px;
+  margin: 0 0 8px 16px;
   line-height: 1.55;
 }
 
 .projectList li {
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
-/* tech stack */
+/* tech stack + IDE */
 .projectTech {
-  margin-top: 6px;
+  margin-top: 4px;        /* keep close to description */
   font-size: 0.95rem;
   color: #444;
 }
 
-
-/* ===== LOGOS ===== */
-
-.BOALogo {
-  display: flex;
-  justify-content: center;
-  margin-top: 18px;
-  margin-bottom: 8px;
+/* ===== DESKTOP NUDGE TO THE RIGHT ===== */
+@media (min-width: 1024px) {
+  .projectsSection {
+    max-width: 900px;
+    margin: 32px auto 60px;
+    padding-left: 200px;    /* pushes logos + cards right */
+    padding-right: 24px;
+  }
 }
 
-.BOALogo img {
-  width: 350px;
-  height: auto;
-  margin-left: 300px;
-}
-
-.medtronicLogo {
-  display: flex;
-  justify-content: center;
-  margin-top: 18px;
-  margin-bottom: 8px;
-}
-
-.medtronicLogo img {
-  width: 300px;
-  height: auto;
-  margin-left: 250px;
-}
-
-.medtronicLogo2 {
-  display: flex;
-  justify-content: center;
-  margin-top: 18px;
-  margin-bottom: 8px;
-}
-
-.medtronicLogo2 img {
-  width: 300px;
-  height: auto;
-  margin-left: 250px;
-}
-
-
-/* ===== MOBILE RESPONSIVE (center cards & logos) ===== */
+/* ===== MOBILE RESPONSIVE ===== */
 @media (max-width: 768px) {
   .projectsSection {
-    align-items: stretch;
+    max-width: 100%;
+    margin: 24px auto 40px;
     padding: 0 16px;
-    margin-top: 24px;
-  }
-
-  .projectLogo,
-  .BOALogo,
-  .medtronicLogo,
-  .medtronicLogo2 {
-    margin-left: 0;
-    justify-content: center;
+    gap: 20px;
+    align-items: stretch;
   }
 
   .projectLogo img,
   .BOALogo img,
   .medtronicLogo img,
   .medtronicLogo2 img {
-    margin-left: 0;
     width: 70%;
     max-width: 260px;
   }
 
   .projectCard {
     max-width: 100%;
-    margin: 0 auto 20px;
     padding: 18px 16px;
+    margin-bottom: 24px;
   }
 
   .projectCard h2 {
     font-size: 1.2rem;
-  }
-
-  /* tighten spacing between description, list, and tech on mobile */
-  .projectBlurb {
-    margin: 4px 0 8px;
-  }
-
-  .projectList {
-    margin: 0 0 6px 16px;
-  }
-
-  .projectTech {
-    margin-top: 4px;
   }
 
   .projectBlurb,
@@ -185,6 +135,8 @@
     font-size: 0.95rem;
   }
 }
+
+
 
 
 

@@ -1,6 +1,9 @@
+/* src/assets/resume.css */
+
+/* Load Satoshi for the header */
 @import url("https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700&display=swap");
 
-/* Whole resume section */
+/* ===== WHOLE RESUME SECTION ===== */
 .resumeSection {
   width: 100%;
   max-width: 1100px;
@@ -11,28 +14,28 @@
   align-items: center;
 }
 
-/* Header above the viewer */
+/* ===== HEADER ABOVE VIEWER ===== */
 .resumeHeader {
+  width: 100%;
   text-align: center;
-  margin-bottom: 18px; 
-  margin-left: 400px; 
-
+  margin-bottom: 18px;
 }
 
 .resumeTitle {
   font-family: "Satoshi", system-ui, sans-serif;
   font-size: 2rem;
   font-weight: 600;
-  margin-bottom: 6px;
+  margin: 0 0 6px 0;
   color: #000;
 }
 
 .resumeSubtitle {
   font-size: 0.95rem;
   color: #555;
+  margin: 0;
 }
 
-/* Action buttons */
+/* ===== ACTION BUTTONS ===== */
 .resumeActions {
   margin-top: 12px;
   display: flex;
@@ -44,7 +47,7 @@
 .resumeButton {
   padding: 8px 16px;
   border-radius: 999px;
-  border: none;               /* <-- no white outline border */
+  border: 1px solid #000;      /* same style for both buttons */
   background: #000;
   font-size: 0.9rem;
   text-decoration: none;
@@ -53,7 +56,16 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: background 0.15s ease, box-shadow 0.15s ease, transform 0.1s ease;
+  transition:
+    background 0.15s ease,
+    box-shadow 0.15s ease,
+    transform 0.1s ease;
+}
+
+.resumeButton.primary {
+  background: #000;
+  color: #fff;
+  border-color: #000;
 }
 
 .resumeButton:hover {
@@ -61,13 +73,7 @@
   transform: translateY(-1px);
 }
 
-/* remove default focus outline difference on mobile */
-.resumeButton:focus,
-.resumeButton:focus-visible {
-  outline: none;
-}
-
-/* PDF viewer container */
+/* ===== PDF VIEWER CONTAINER ===== */
 .resumeViewer {
   width: 100%;
   max-width: 900px;
@@ -76,15 +82,24 @@
   overflow: hidden;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
   border: 1px solid rgba(0, 0, 0, 0.06);
-  background: #f9f9f9; 
-  margin-left: 400px;
+  background: #f9f9f9;
+  margin: 20px auto 0;
 }
 
-/* iframe */
 .resumeViewer iframe {
   width: 100%;
   height: 100%;
   border: none;
+}
+
+/* ===== DESKTOP NUDGE TO THE RIGHT ===== */
+@media (min-width: 1024px) {
+  .resumeSection {
+    max-width: 900px;      /* tighten column */
+    margin: 0 auto 40px;
+    padding-left: 300px;    /* pushes content slightly right */
+    padding-right: 24px;
+  }
 }
 
 /* ===== MOBILE RESPONSIVE ===== */
@@ -95,10 +110,6 @@
     align-items: stretch;
   }
 
-  .resumeHeader {
-    text-align: left;
-  }
-
   .resumeTitle {
     font-size: 1.6rem;
   }
@@ -107,12 +118,10 @@
     font-size: 0.9rem;
   }
 
-  .resumeActions {
-    justify-content: flex-start;
-  }
-
   .resumeViewer {
     max-width: 100%;
     height: 480px;
+    margin-top: 16px;
   }
 }
+

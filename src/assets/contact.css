@@ -71,7 +71,11 @@
   border-radius: 6px;
   border: 1px solid #ccc;
   font-size: 0.95rem;
-  font-family: inherit;
+  font-family: inherit; 
+
+  background: #ffffff; 
+  color: #000000; 
+  
 }
 
 /* Disabled */
