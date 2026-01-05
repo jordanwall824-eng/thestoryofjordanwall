@@ -1,0 +1,173 @@
+/* src/assets/projects.css */
+
+/* Load Satoshi (same import style as About Me) */
+@import url("https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700&display=swap");
+
+
+/* Page layout */
+.projectsSection {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* logo container */
+.projectLogo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6px;
+  margin-left: 200px;
+}
+
+/* logo image */
+.projectLogo img {
+  width: 260px;
+  max-width: 100%;
+}
+
+/* case study card */
+.projectCard {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 24px 28px;
+
+  width: 100%;
+  max-width: 720px;
+  margin-left: 300px;
+
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  border: 1px solid rgba(0,0,0,0.08);
+
+  text-align: left;
+}
+
+/* label line */
+.projectLabel {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+
+/* ===== ROLE TITLES — Satoshi ===== */
+.projectCard h2 {
+  margin: 0 0 10px 0;
+  font-size: 1.35rem;
+  font-weight: 600;
+  font-family: "Satoshi", system-ui, sans-serif;
+  color: #111;
+}
+
+
+/* description */
+.projectBlurb {
+  margin: 6px 0 14px;
+  line-height: 1.55;
+  color: #333;
+}
+
+/* bullet list */
+.projectList {
+  margin: 0 0 10px 16px;
+  line-height: 1.55;
+}
+
+.projectList li {
+  margin-bottom: 6px;
+}
+
+/* tech stack */
+.projectTech {
+  margin-top: 6px;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+
+/* ===== LOGOS ===== */
+
+.BOALogo {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
+
+.BOALogo img {
+  width: 350px;
+  height: auto;
+  margin-left: 300px;
+}
+
+.medtronicLogo {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
+
+.medtronicLogo img {
+  width: 300px;
+  height: auto;
+  margin-left: 250px;
+}
+
+.medtronicLogo2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
+
+.medtronicLogo2 img {
+  width: 300px;
+  height: auto;
+  margin-left: 250px;
+}
+
+
+/* ===== MOBILE RESPONSIVE (center cards & logos) ===== */
+@media (max-width: 768px) {
+  .projectsSection {
+    align-items: stretch;
+    padding: 0 16px;
+    margin-top: 24px;
+  }
+
+  .projectLogo,
+  .BOALogo,
+  .medtronicLogo,
+  .medtronicLogo2 {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .projectLogo img,
+  .BOALogo img,
+  .medtronicLogo img,
+  .medtronicLogo2 img {
+    margin-left: 0;
+    width: 70%;
+    max-width: 260px;
+  }
+
+  .projectCard {
+    max-width: 100%;
+    margin-left: 0;
+    padding: 18px 16px;
+  }
+
+  .projectCard h2 {
+    font-size: 1.2rem;
+  }
+
+  .projectBlurb,
+  .projectList,
+  .projectTech {
+    font-size: 0.95rem;
+  }
+}
+
+

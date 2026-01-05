@@ -1,0 +1,245 @@
+@import url("https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700&display=swap");
+
+
+
+/* ===== WHOLE CONTACT SECTION (CENTER EVERYTHING) ===== */
+.contactPage {
+  width: 100%;
+  min-height: calc(100vh - 120px); /* subtract navbar height if needed */
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* vertical center */
+  align-items: center;      /* horizontal center */
+}
+
+/* ===== INNER CONTAINER ===== */
+.contactContent {
+  max-width: 800px;
+  width: 100%;
+  padding: 20px 16px 60px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers everything inside */ 
+  margin-left: 250px; 
+}
+
+/* ===== HEADING ===== */
+.contactMe {
+  font-family: "Satoshi", system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 24px;
+  margin-left: 0;
+  color: #111;
+}
+
+/* ===== INTRO TEXT ===== */
+.contactIntro {
+  font-size: 0.98rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  max-width: 650px;
+}
+
+/* ===== FORM WRAPPER ===== */
+.contactFormWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ===== FORM ===== */
+.contactForm {
+  max-width: 420px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Inputs + textarea */
+.contactForm input,
+.contactForm textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+  font-family: inherit;
+}
+
+/* Disabled */
+.contactForm input:disabled,
+.contactForm textarea:disabled {
+  background: #f5f5f5;
+}
+
+/* Submit button */
+.contactForm button {
+  margin-top: 4px;
+  background: #000;
+  color: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.contactForm button:hover:not(:disabled) {
+  background: #333;
+  transform: translateY(-1px);
+}
+
+.contactForm button:disabled {
+  opacity: 0.9;
+  cursor: default;
+}
+
+/* Error */
+.submitError {
+  margin-top: 4px;
+  font-size: 0.9rem;
+  color: #c0392b;
+}
+
+/* Spinner */
+.spinner {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  border-top-color: transparent;
+  animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ===== SOCIAL LINKS ===== */
+.socialGrid {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 32px;
+}
+
+.socialBox {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 18px;
+  border: 1px solid #ddd;
+  border-radius: 999px;
+  text-decoration: none;
+  color: #000;
+  background: #fafafa;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.socialBox:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.socialBox img {
+  width: 50px;
+  height: 28px;
+}
+
+/* ===== MODAL ===== */
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5000;
+}
+
+.modalCard {
+  background: #fff;
+  padding: 24px 28px;
+  border-radius: 12px;
+  max-width: 380px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); 
+  margin-right: 125px;
+}
+
+.modalCard h3 { margin-top: 0; margin-bottom: 8px; }
+
+.modalSignature {
+  margin-top: 4px;
+  font-style: italic;
+  color: #555;
+}
+
+.modalButton {
+  margin-top: 16px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.modalButton:hover { background: #333; }
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .contactPage {
+    min-height: auto;
+    padding: 24px 16px 40px;
+  }
+
+  .contactContent {
+    max-width: 100%;
+    margin-left: 0;
+    padding: 20px 0 40px;
+  }
+
+  .contactMe {
+    font-size: 1.6rem;
+  }
+
+  .contactIntro {
+    font-size: 0.9rem;
+  }
+
+  .contactForm {
+    max-width: 100%;
+  }
+
+  .socialGrid {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .socialBox {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .modalCard {
+    margin-right: 0;
+    width: 90%;
+  }
+}
+
+
+

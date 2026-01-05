@@ -1,0 +1,125 @@
+/* src/assets/resume.css */
+
+/* Load Satoshi for the header, if not already imported globally */
+@import url("https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700&display=swap");
+
+/* Whole resume section */
+.resumeSection {
+  width: 100%;
+  max-width: 1100px;       /* keeps it from stretching too wide */
+  margin: 0 auto 30px;     /* center horizontally with top/bottom space */
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header above the viewer */
+.resumeHeader {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.resumeTitle {
+  font-family: "Satoshi", system-ui, sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  margin-left: 370px;
+  color: black;
+}
+
+.resumeSubtitle {
+  font-size: 0.95rem;
+  color: #555;
+  margin-left: 400px;
+}
+
+/* Action buttons */
+.resumeActions {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 400px;
+}
+
+.resumeButton {
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid #ddd;
+  background: black;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.15s ease, box-shadow 0.15s ease, transform 0.1s ease;
+}
+
+.resumeButton.primary {
+  background: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+.resumeButton:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  transform: translateY(-1px);
+}
+
+/* PDF viewer container */
+.resumeViewer {
+  width: 100%;
+  max-width: 900px;
+  height: 600px;                 /* fixed viewing height */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  background: #f9f9f9;
+  margin-left: 400px;
+}
+
+.resumeViewer iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .resumeSection {
+    margin: 0 auto 24px;
+    padding: 0 16px;
+    align-items: stretch;
+  }
+
+  .resumeHeader {
+    text-align: left;
+  }
+
+  .resumeTitle {
+    font-size: 1.6rem;
+    margin-left: 0;        /* remove desktop offset */
+  }
+
+  .resumeSubtitle {
+    font-size: 0.9rem;
+    margin-left: 0;        /* remove desktop offset */
+  }
+
+  .resumeActions {
+    margin-left: 0;        /* remove desktop offset */
+    justify-content: flex-start;
+  }
+
+  .resumeViewer {
+    max-width: 100%;
+    height: 480px;
+    margin-left: 0;        /* center viewer on mobile */
+  }
+}
