@@ -1,6 +1,6 @@
 import "./projects.css";
 import vanguard from "./vanguard.png"; 
-import bankofamerica from "./bankofamerica.png"; 
+import bankofAmerica from "./bankOfAmerica.png"; 
 import medtronic from "./medtronic.png"; 
 
 function Projects() {
@@ -39,8 +39,8 @@ function Projects() {
     </div>
 
     <div className="BOALogo">
-        <img src={bankofamerica} alt="Bank of America Logo" />
-    </div>
+  <img src={bankofAmerica} alt="Bank of America Logo" />
+</div>
   
 
 {/* Bank of America Project Card */}
