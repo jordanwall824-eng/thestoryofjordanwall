@@ -1,16 +1,18 @@
 @import url("https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700&display=swap");
 
-
-
 /* ===== WHOLE CONTACT SECTION (CENTER EVERYTHING) ===== */
 .contactPage {
   width: 100%;
   min-height: calc(100vh - 120px); /* subtract navbar height if needed */
-  
+
   display: flex;
   flex-direction: column;
   justify-content: center;  /* vertical center */
   align-items: center;      /* horizontal center */
+
+  /* force light background + dark text even in device dark mode */
+  background: #ffffff;
+  color: #111111;
 }
 
 /* ===== INNER CONTAINER ===== */
@@ -22,8 +24,8 @@
 
   display: flex;
   flex-direction: column;
-  align-items: center; /* centers everything inside */ 
-  margin-left: 250px; 
+  align-items: center; /* centers everything inside */
+  margin-left: 250px;
 }
 
 /* ===== HEADING ===== */
@@ -122,7 +124,11 @@
   animation: spin 0.6s linear infinite;
 }
 
-@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 /* ===== SOCIAL LINKS ===== */
 .socialGrid {
@@ -174,11 +180,26 @@
   max-width: 380px;
   width: 90%;
   text-align: center;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); 
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
   margin-right: 125px;
+
+  /* make sure all text on the card is dark and readable */
+  color: #111;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
 }
 
-.modalCard h3 { margin-top: 0; margin-bottom: 8px; }
+/* main paragraph in the modal (the “Thank you…” text) */
+.modalCard p {
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.modalCard h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #111;
+}
 
 .modalSignature {
   margin-top: 4px;
@@ -198,7 +219,9 @@
   transition: background 0.2s ease;
 }
 
-.modalButton:hover { background: #333; }
+.modalButton:hover {
+  background: #333;
+}
 
 /* ===== MOBILE RESPONSIVE ===== */
 @media (max-width: 768px) {

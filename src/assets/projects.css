@@ -18,13 +18,14 @@
   display: flex;
   justify-content: center;
   margin-bottom: 6px;
-  margin-left: 200px;
+  margin-left: 50px;
 }
 
 /* logo image */
 .projectLogo img {
   width: 260px;
-  max-width: 100%;
+  max-width: 100%; 
+  margin-left: 200px
 }
 
 /* case study card */
@@ -35,7 +36,9 @@
 
   width: 100%;
   max-width: 720px;
-  margin-left: 300px;
+
+  /* centered so it’s not hugging the right edge */
+  margin-left: 250px;
 
   box-shadow: 0 6px 18px rgba(0,0,0,0.06);
   border: 1px solid rgba(0,0,0,0.08);
@@ -155,12 +158,25 @@
 
   .projectCard {
     max-width: 100%;
-    margin-left: 0;
+    margin: 0 auto 20px;
     padding: 18px 16px;
   }
 
   .projectCard h2 {
     font-size: 1.2rem;
+  }
+
+  /* tighten spacing between description, list, and tech on mobile */
+  .projectBlurb {
+    margin: 4px 0 8px;
+  }
+
+  .projectList {
+    margin: 0 0 6px 16px;
+  }
+
+  .projectTech {
+    margin-top: 4px;
   }
 
   .projectBlurb,
@@ -169,5 +185,6 @@
     font-size: 0.95rem;
   }
 }
+
 
 
