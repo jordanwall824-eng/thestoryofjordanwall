@@ -26,13 +26,14 @@
   font-size: 2rem;
   font-weight: 600;
   margin: 0 0 6px 0;
-  color: #000;
+  color: #000; 
+  margin-right: 100px;
 }
 
 .resumeSubtitle {
   font-size: 0.95rem;
   color: #555;
-  margin: 0;
+  margin-right: 100px;
 }
 
 /* ===== ACTION BUTTONS ===== */
@@ -41,7 +42,8 @@
   display: flex;
   gap: 10px;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
+  margin-right: 100px;
 }
 
 .resumeButton {
