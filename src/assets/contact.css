@@ -24,8 +24,8 @@
 
   display: flex;
   flex-direction: column;
-  align-items: center; /* centers everything inside */
-  margin-left: 250px;
+  align-items: center;      /* centers everything inside */
+  margin: 0 auto;           /* <-- center instead of margin-left */
 }
 
 /* ===== HEADING ===== */
@@ -71,11 +71,9 @@
   border-radius: 6px;
   border: 1px solid #ccc;
   font-size: 0.95rem;
-  font-family: inherit; 
-
-  background: #ffffff; 
-  color: #000000; 
-  
+  font-family: inherit;
+  background: #ffffff;
+  color: #000000;
 }
 
 /* Disabled */
@@ -185,9 +183,7 @@
   width: 90%;
   text-align: center;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-  margin-right: 125px;
 
-  /* make sure all text on the card is dark and readable */
   color: #111;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
@@ -236,7 +232,7 @@
 
   .contactContent {
     max-width: 100%;
-    margin-left: 0;
+    margin: 0 auto;
     padding: 20px 0 40px;
   }
 
@@ -263,10 +259,10 @@
   }
 
   .modalCard {
-    margin-right: 0;
     width: 90%;
   }
 }
+
 
 
 

@@ -4,13 +4,16 @@
 :root {
   font-family: Arial, Helvetica, sans-serif;
   background-color: white;
-  line-height: 1.5; 
+  line-height: 1.5;
   color-scheme: light;
 }
 
 html, body {
   background-color: #ffffff;
   color: #000000;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;   /* <-- important */
 }
 
 body {
@@ -22,7 +25,10 @@ body {
 .webSite {
   text-align: center;
   padding-top: 160px;   /* navbar 60 + titleBar height */
+  max-width: 100%;
+  overflow-x: hidden;   /* extra safety */
 }
+
 
 /* NAVBAR */
 .navBar {
@@ -142,11 +148,22 @@ body {
 }
 
 /* SCROLLABLE PAGE CONTENT */
+/* SCROLLABLE PAGE CONTENT */
 .content {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 40px 20px 80px;
+
+  /* shift slightly left but stay centered */
+  padding: 40px 12px 80px;
+  transform: translateX(-8px);
+} 
+
+.pageWrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px 0 0;
 }
+
 
 .titleBar {
   transition: opacity .4s ease, transform .4s ease;
@@ -211,7 +228,8 @@ body {
   }
 
   .content {
-    padding: 24px 12px 60px;
+    padding: 24px 10px 60px;
+    transform: translateX(-4px);  /* gentler shift on phones */
   }
 }
 

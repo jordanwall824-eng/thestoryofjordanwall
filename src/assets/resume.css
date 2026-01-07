@@ -7,11 +7,11 @@
 .resumeSection {
   width: 100%;
   max-width: 1100px;
-  margin: 0 auto 30px;
-  padding: 0 24px;
+  margin: 0 auto 40px;      /* centered */
+  padding: 0 24px;          /* even horizontal padding */
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center;      /* center inner content */
 }
 
 /* ===== HEADER ABOVE VIEWER ===== */
@@ -83,22 +83,21 @@
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
   border: 1px solid rgba(0, 0, 0, 0.06);
   background: #f9f9f9;
-  margin: 20px auto 0;
+  margin: 20px auto 0;    /* centered */
 }
 
 .resumeViewer iframe {
   width: 100%;
   height: 100%;
   border: none;
-}
+} 
 
-/* ===== DESKTOP NUDGE TO THE RIGHT ===== */
 @media (min-width: 1024px) {
   .resumeSection {
-    max-width: 900px;      /* tighten column */
+    max-width: 900px;
     margin: 0 auto 40px;
-    padding-left: 300px;    /* pushes content slightly right */
-    padding-right: 24px;
+    padding-left: 10px;   /* slight breathing room on the left */
+    
   }
 }
 
@@ -107,7 +106,7 @@
   .resumeSection {
     margin: 0 auto 24px;
     padding: 0 16px;
-    align-items: stretch;
+    align-items: center;
   }
 
   .resumeTitle {
@@ -124,4 +123,5 @@
     margin-top: 16px;
   }
 }
+
 
