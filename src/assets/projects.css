@@ -99,7 +99,6 @@
     
   }
 }
-
 /* ===== MOBILE RESPONSIVE ===== */
 @media (max-width: 768px) {
   .projectsSection {
@@ -119,7 +118,7 @@
   }
 
   .projectCard {
-    max-width: 100%;
+    max-width: 80%;
     padding: 18px 16px;
     margin-bottom: 24px;
   }
