@@ -20,7 +20,7 @@ function Projects() {
 
     <p className="projectBlurb">
       Worked as an Application Engineer at Vanguard where I contributed to UI enhancement <br /> 
-      for an Artifical Intelligence powered chatbot used to deesclate Jira tickets and solve problems for over 20,000 vanguard employees 
+      for an Artifical Intelligence powered chatbot used to deesclate Jira tickets and solve problems for over 20,000 Vanguard employees 
       across the company. Through my time here I utlized Angular and Typescript to enhance the User Experience, AWS 
       Bedrock to create a response for the chatbot and used Git to commit and push code changes. I learned what it is like 
       to work with Artifical Intelligence and how to implement it into real world applications.
