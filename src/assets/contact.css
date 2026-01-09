@@ -277,7 +277,8 @@
   }
 
   .modalCard {
-    width: 80%;
+    width: 80%; 
+    padding-left: 50px;
   }
 }
 
