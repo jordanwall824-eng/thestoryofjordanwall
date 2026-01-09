@@ -277,8 +277,8 @@
   }
 
   .modalCard {
-    width: 70%; 
-    padding-left: 60px; 
+    width: 70%;
+    margin-left: 40px;   /* moves modal to the right */
   }
 }
 
