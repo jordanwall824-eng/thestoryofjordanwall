@@ -143,7 +143,7 @@ function Contact() {
             onClick={(e) => e.stopPropagation()} // prevent overlay click
           >
             <p>
-              Thank you for taking the time to contact me. I will reach out to
+              Thank you for taking the time to contact me, I will reach out to
               you soon.
             </p>
             <p className="modalSignature">– Jordan Wall</p>
