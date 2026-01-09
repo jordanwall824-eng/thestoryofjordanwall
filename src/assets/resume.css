@@ -98,7 +98,7 @@
   .resumeSection {
     max-width: 900px;
     margin: 0 auto 40px;
-    padding-left: 10px;   /* slight breathing room on the left */
+    padding-right: 100px;   /* slight breathing room on the left */
     
   }
 }
