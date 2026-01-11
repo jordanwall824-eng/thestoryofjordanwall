@@ -18,8 +18,8 @@ function AboutMe() {
 
         <p>
           Hello there! My name is Jordan Wall, a senior Information Technology
-          student at North Carolina A&amp;T State University from Greensboro, NC. I have a passion
-          for coding and creating applications that deliver creative and
+          student at North Carolina A&amp;T State University from Greensboro, NC. I am passionate
+          about coding and creating applications that provide creative and
           meaningful user experiences. I am excited to share my journey and
           projects with you through this portfolio website.
         </p>
@@ -40,18 +40,18 @@ function AboutMe() {
         <div className="list">
           <ul>
             <li>
-              First student from North Carolina A&amp;T to receive Vanguard Co-op
+              I was the first student from North Carolina A&amp;T to receive the Vanguard Co-op.
             </li>
             <li>
-              1 of 4 NC A&amp;T students selected to attend AfroTech 2025 sponsored
-              by Vanguard
+             I was one of four NC A&amp;T students selected to attend AfroTech 2025 sponsored
+            by Vanguard.
             </li>
-            <li>3x Chancellor&apos;s List</li>
+            <li>I have been on the Chancellor&apos;s List 3 times for academic excellence.</li>
             <li>
-              Awarded Novartis HBCU Scholarship from Thurgood Marshall College
-              Fund
+              I received the Novartis HBCU Scholarship from Thurgood Marshall College
+              Fund. 
             </li>
-            <li>Previous Engineering Intern at Bank of America</li>
+            <li>Previously Interned at Bank of America as a Software Engineering Intern.</li>
             <li>
               Member of Alpha Phi Alpha Fraternity, Inc. through Beta Epsilon chapter
             </li>
