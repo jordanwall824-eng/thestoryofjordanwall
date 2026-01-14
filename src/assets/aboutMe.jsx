@@ -53,7 +53,7 @@ function AboutMe() {
             </li>
             <li>Previously Interned at Bank of America as a Software Engineering Intern.</li>
             <li>
-              Member of Alpha Phi Alpha Fraternity, Inc. through Beta Epsilon chapter
+              Member of Alpha Phi Alpha Fraternity, Inc. through the Beta Epsilon chapter
             </li>
             <li>Member of the National Society of Black Engineers (NSBE)</li>
           </ul>
