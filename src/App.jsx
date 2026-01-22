@@ -62,7 +62,7 @@ function App() {
                 to="/projects"
                 className={({ isActive }) => (isActive ? "active" : "")}
               >
-                Projects
+                Experience
               </NavLink>
             </li>
 
@@ -100,7 +100,9 @@ function App() {
           <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-      </main>
+      </main> 
+
+      
     </div>
   );
 }
